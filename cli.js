@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-"use strict";
-if (false) {
-    module.exports = require("./oxide/cli");
+
+if (__OXIDE__) {
+  module.exports = require('./oxide/cli')
 } else {
-    module.exports = require("./cli/index");
+  module.exports = require('./cli/index')
 }

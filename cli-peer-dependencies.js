@@ -1,36 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-function _export(target, all) {
-    for(var name in all)Object.defineProperty(target, name, {
-        enumerable: true,
-        get: all[name]
-    });
+export function lazyPostcss() {
+  return require('postcss')
 }
-_export(exports, {
-    lazyPostcss: function() {
-        return lazyPostcss;
-    },
-    lazyPostcssImport: function() {
-        return lazyPostcssImport;
-    },
-    lazyAutoprefixer: function() {
-        return lazyAutoprefixer;
-    },
-    lazyCssnano: function() {
-        return lazyCssnano;
-    }
-});
-function lazyPostcss() {
-    return require("postcss");
+
+export function lazyPostcssImport() {
+  return require('postcss-import')
 }
-function lazyPostcssImport() {
-    return require("postcss-import");
+
+export function lazyAutoprefixer() {
+  return require('autoprefixer')
 }
-function lazyAutoprefixer() {
-    return require("autoprefixer");
-}
-function lazyCssnano() {
-    return require("cssnano");
+
+export function lazyCssnano() {
+  return require('cssnano')
 }
