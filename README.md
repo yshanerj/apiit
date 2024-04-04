@@ -1,147 +1,66 @@
-# YAML <a href="https://www.npmjs.com/package/yaml"><img align="right" src="https://badge.fury.io/js/yaml.svg" title="npm package" /></a>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-`yaml` is a definitive library for [YAML](https://yaml.org/), the human friendly data serialization standard.
-This library:
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-- Supports both YAML 1.1 and YAML 1.2 and all common data schemas,
-- Passes all of the [yaml-test-suite](https://github.com/yaml/yaml-test-suite) tests,
-- Can accept any string as input without throwing, parsing as much YAML out of it as it can, and
-- Supports parsing, modifying, and writing YAML comments and blank lines.
+## About Laravel
 
-The library is released under the ISC open source license, and the code is [available on GitHub](https://github.com/eemeli/yaml/).
-It has no external dependencies and runs on Node.js as well as modern browsers.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-For the purposes of versioning, any changes that break any of the documented endpoints or APIs will be considered semver-major breaking changes.
-Undocumented library internals may change between minor versions, and previous APIs may be deprecated (but not removed).
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-The minimum supported TypeScript version of the included typings is 3.9;
-for use in earlier versions you may need to set `skipLibCheck: true` in your config.
-This requirement may be updated between minor versions of the library.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-For more information, see the project's documentation site: [**eemeli.org/yaml**](https://eemeli.org/yaml/)
+## Learning Laravel
 
-To install:
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-```sh
-npm install yaml
-```
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-**Note:** These docs are for `yaml@2`. For v1, see the [v1.10.0 tag](https://github.com/eemeli/yaml/tree/v1.10.0) for the source and [eemeli.org/yaml/v1](https://eemeli.org/yaml/v1/) for the documentation.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## API Overview
+## Laravel Sponsors
 
-The API provided by `yaml` has three layers, depending on how deep you need to go: [Parse & Stringify](https://eemeli.org/yaml/#parse-amp-stringify), [Documents](https://eemeli.org/yaml/#documents), and the underlying [Lexer/Parser/Composer](https://eemeli.org/yaml/#parsing-yaml).
-The first has the simplest API and "just works", the second gets you all the bells and whistles supported by the library along with a decent [AST](https://eemeli.org/yaml/#content-nodes), and the third lets you get progressively closer to YAML source, if that's your thing.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-```js
-import { parse, stringify } from 'yaml'
-// or
-import YAML from 'yaml'
-// or
-const YAML = require('yaml')
-```
+### Premium Partners
 
-### Parse & Stringify
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-- [`parse(str, reviver?, options?): value`](https://eemeli.org/yaml/#yaml-parse)
-- [`stringify(value, replacer?, options?): string`](https://eemeli.org/yaml/#yaml-stringify)
+## Contributing
 
-### Documents
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-- [`Document`](https://eemeli.org/yaml/#documents)
-  - [`constructor(value, replacer?, options?)`](https://eemeli.org/yaml/#creating-documents)
-  - [`#anchors`](https://eemeli.org/yaml/#working-with-anchors)
-  - [`#contents`](https://eemeli.org/yaml/#content-nodes)
-  - [`#directives`](https://eemeli.org/yaml/#stream-directives)
-  - [`#errors`](https://eemeli.org/yaml/#errors)
-  - [`#warnings`](https://eemeli.org/yaml/#errors)
-- [`isDocument(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`parseAllDocuments(str, options?): Document[]`](https://eemeli.org/yaml/#parsing-documents)
-- [`parseDocument(str, options?): Document`](https://eemeli.org/yaml/#parsing-documents)
+## Code of Conduct
 
-### Content Nodes
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-- [`isAlias(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`isCollection(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`isMap(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`isNode(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`isPair(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`isScalar(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`isSeq(foo): boolean`](https://eemeli.org/yaml/#identifying-nodes)
-- [`new Scalar(value)`](https://eemeli.org/yaml/#scalar-values)
-- [`new YAMLMap()`](https://eemeli.org/yaml/#collections)
-- [`new YAMLSeq()`](https://eemeli.org/yaml/#collections)
-- [`doc.createAlias(node, name?): Alias`](https://eemeli.org/yaml/#working-with-anchors)
-- [`doc.createNode(value, options?): Node`](https://eemeli.org/yaml/#creating-nodes)
-- [`doc.createPair(key, value): Pair`](https://eemeli.org/yaml/#creating-nodes)
-- [`visit(node, visitor)`](https://eemeli.org/yaml/#modifying-nodes)
+## Security Vulnerabilities
 
-### Parsing YAML
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-- [`new Lexer().lex(src)`](https://eemeli.org/yaml/#lexer)
-- [`new Parser(onNewLine?).parse(src)`](https://eemeli.org/yaml/#parser)
-- [`new Composer(options?).compose(tokens)`](https://eemeli.org/yaml/#composer)
+## License
 
-## YAML.parse
-
-```yaml
-# file.yml
-YAML:
-  - A human-readable data serialization language
-  - https://en.wikipedia.org/wiki/YAML
-yaml:
-  - A complete JavaScript implementation
-  - https://www.npmjs.com/package/yaml
-```
-
-```js
-import fs from 'fs'
-import YAML from 'yaml'
-
-YAML.parse('3.14159')
-// 3.14159
-
-YAML.parse('[ true, false, maybe, null ]\n')
-// [ true, false, 'maybe', null ]
-
-const file = fs.readFileSync('./file.yml', 'utf8')
-YAML.parse(file)
-// { YAML:
-//   [ 'A human-readable data serialization language',
-//     'https://en.wikipedia.org/wiki/YAML' ],
-//   yaml:
-//   [ 'A complete JavaScript implementation',
-//     'https://www.npmjs.com/package/yaml' ] }
-```
-
-## YAML.stringify
-
-```js
-import YAML from 'yaml'
-
-YAML.stringify(3.14159)
-// '3.14159\n'
-
-YAML.stringify([true, false, 'maybe', null])
-// `- true
-// - false
-// - maybe
-// - null
-// `
-
-YAML.stringify({ number: 3, plain: 'string', block: 'two\nlines\n' })
-// `number: 3
-// plain: string
-// block: |
-//   two
-//   lines
-// `
-```
-
----
-
-Browser testing provided by:
-
-<a href="https://www.browserstack.com/open-source">
-<img width=200 src="https://eemeli.org/yaml/images/browserstack.svg" />
-</a>
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
