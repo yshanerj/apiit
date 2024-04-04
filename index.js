@@ -1,2 +1,1 @@
-"use strict";
-module.exports = require("./plugin");
+module.exports = require('./plugin')
