@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rochester&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.greentick{
+    width: auto;
+    height: 4rem;
+    align-items: center;
+
+}
+
+
+.cbtn{
+    background-color: black !important;
+}
+
+.pgnext{
+    padding-top: 20px;
+}
+
+.subt{
+    margin-bottom: 1rem !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.navbar a{
+    font-family: Montserrat; font-weight: bold;
+}
+
+.afterlogin{
+    margin-top: .8rem;
+}
+
+.navbarcontainer{
+    display: flex !important; justify-content: space-around !important;
+}
+
+.homepageheroheadercontainer{
+    background-image: url(/home/images/homeheader.png); justify-content: flex-start; align-items: center; display: inline-flex; background-size: cover; height: 900px;
+}
+
+.homepageheroheaderrow{
+    flex-direction: column; justify-content: center; align-items: flex-start; gap: 24px; display: inline-flex; width: 100%; height: 600px;
+}
+
+.homepageheroheaderrow h1{
+    align-self: stretch; color: black; font-size: 60px; font-family: Antonio; font-weight: 700; line-height: 84px; word-wrap: break-word;
+}
+
+.homepageheroheaderrow h3{
+    color: black; font-size: 20px; font-family: Antonio; font-weight: 600; line-height: 30px; word-wrap: break-word;
+}
+
+.homepageheroheaderrow button{
+    background: black; border-radius: 15px; border: none; color: white; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word; margin-top: 1rem;
+}
+
+.homepageheroheaderrow button:hover{
+    background: rgb(97, 97, 97); color: rgb(0, 0, 0); transition: 250ms;
+}
+
+.homepageheadercontainer{
+    background: #E7E8E7; flex-direction: column; justify-content: flex-start; align-items: center; gap: 80px; display: inline-flex;
+}
+
+.homepageheaderrow{
+    align-self: stretch; justify-content: flex-start; align-items: center; gap: 80px; display: inline-flex;
+}
+
+.homepageheaderrow img{
+    flex: 1 1 0; height: 640px; object-fit: cover;
+}
+
+.homepageheadercontent{
+    flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex;
+}
+
+.homepageheaderrow .row{
+    margin: 0%;
+}
+
+.homepageheadercontent h1{
+    align-self: stretch; color: black; font-size: 40px; font-family: Roboto; font-weight: 700; line-height: 48px; word-wrap: break-word;
+}
+
+.homepageheadercontent h6{
+    align-self: stretch; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 27px; word-wrap: break-word;
+}
+
+.homepageheadercontent img{
+    width: 54px; height: 46px
+}
+
+.homepageheadercontent h2{
+    align-self: stretch; color: black; font-size: 20px; font-family: Roboto; font-weight: 700; line-height: 28px; word-wrap: break-word;
+}
+
+.homepageheadercontent p{
+    align-self: stretch; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word; margin: 0;
+}
+
+.testimonialscontainer{
+    background: #E7E8E7; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex;
+}
+
+.testimonialsheadrow{
+    flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;  padding: 0 1.5rem;
+}
+
+.testimonialsheadrow h1{
+    color: black; font-size: 48px; font-family: Roboto; font-weight: 700; line-height: 57.60px; word-wrap: break-word;
+}
+
+.testimonialsheadrow p{
+    color: black; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 27px; word-wrap: break-word;
+}
+
+.testimonialsfootrow{
+    align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex; padding: 0 1.5rem;
+}
+
+.stars{
+    justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex;
+}
+
+.testimonialsfootrow h1{
+    align-self: stretch; color: black; font-size: 20px; font-family: Roboto; font-weight: 700; line-height: 28px; word-wrap: break-word;
+}
+.testimonialsfootrow img{
+    width: 56px; height: 56px; border-radius: 100px
+}
+.testimonialsfootrow p{
+    color: black; font-size: 16px; font-family: Roboto; font-weight: 600; line-height: 24px; word-wrap: break-word; margin-top: 1rem;
+}
+
+.productssontainer{
+    flex-direction: column; justify-content: flex-start; align-items: center; gap: 80px; display: inline-flex;
+}
+
+.productsheadrow{
+    align-self: stretch; justify-content: space-between;display: inline-flex;
+}
+
+.productsheadrow h1{
+    align-self: stretch; color: black; font-size: 48px; font-family: Roboto; font-weight: 700; line-height: 57.60px; word-wrap: break-word;
+}
+
+.productsheadrow p{
+    align-self: stretch; color: black; font-size: 18px; font-family: Roboto; font-weight: 400; line-height: 27px; word-wrap: break-word;
+}
+
+.productsheadrow button{
+    border-radius: 15px; border: 1px black solid; background-color: white; justify-content: center; align-items: center; gap: 8px; display: flex; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word; float: right;
+}
+.productsheadrow button:hover{
+    background-color: black; color: white; transition: 250ms;
+}
+
+.productsfootrow{
+    gap: 40px; justify-content: center; padding: 1.5rem;
+}
+
+.productsfootrow img{
+    width: 304px !important; height: 250px !important; object-fit: cover !important; transition: all 300ms !important; max-width: none !important;
+}
+
+.productsfootrow img:hover{
+    transform: translateY(-20px) scale(1.05);  transition: ease-in-out 300ms; box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 15px;
+}
+
+@media (min-width: 250px ) AND ( max-width:320px) {
+    .productsfootrow{
+        padding: 0;
+    }
+    .productsfootrow img{
+        width: 251px; height: 413px; object-fit: cover;
+    }
+
+}
+@media (min-width: 320px ) AND ( max-width:420px) {
+    .productsfootrow{
+        padding: 0;
+    }
+}
+
+.productsfootrow p{
+    color: black; font-size: 18px; font-family: Roboto; font-weight: 600; line-height: 27px; word-wrap: break-word; margin: 0;
+}
+
+
+/* ------------------------------------Menswear----------------------------------------- */
+
+.mensheadrow{
+    text-align: center;
+}
+
+.mensheadrow h1, .mensheadrow p, .tshirtheadrow h1{
+    font-family: Antonio;
+}
+
+.button{
+    display: flex; justify-content: center; align-items: center;
+}
+.btn{
+    margin: .5rem;
+}
+
+/* ---------------------------------------product----------------------------------- */
+
+.productcontainer{
+    padding: 3rem;
+}
+
+.cth{
+    padding: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.ctd{
+    text-align: center;
+    padding: 15px;
+}
+
+.imgd{
+    text-align: center;
+    width: 5px;
+    height: 5px;
+}
+
+
+.imagescol{
+    display: flex; justify-content: center;
+}
+
+.imagescol img{
+    width: 100%; object-fit: cover; margin-bottom: 1rem;
+}
+
+.btnproduct{
+    margin: 0;
+    float: right;
+}
+
+.productcontainer h1, .productcontainer h3, .productcontainer h5{
+    font-family: Antonio;
+}
+
+.productcontainer h1{
+font-size: 40px; font-weight: 700; line-height: 48px;
+}
+.productcontainer h2{
+font-size: 25px; font-weight: 500; line-height: 38px;
+}
+.productcontainer h5{
+font-size: 25px; font-weight: 500; line-height: 38px;
+}
+.productcontainer p{
+font-size: 20px; font-weight: 300; line-height: 32px;
+}
+
+@media (min-width: 320px ) AND ( max-width:750px) {
+    .imagescol img{
+        width: 300px; object-fit: cover;
+    }
+}
+
+/* ---------------------------------------cart-------------------------- */
+
+.cartcontainer{
+    justify-content: center;
+    align-items: center;
+}
+
+.cartcontainer img{
+    width: 150px;
+}
+
+.cartcontainer h1, .Checkoutcontainer h1 {
+    font-family: Antonio; font-size: 40px; font-weight: 700; line-height: 48px; margin-bottom: 1.5rem;
+}
+.cartcontainer h3, .Checkoutcontainer h3{
+    font-family: Antonio; font-size: 30px; font-weight: 700; line-height: 18px; margin-bottom: 1.5rem;
+}
+.cartcontainer p, .Checkoutcontainer p{
+    font-family: Antonio; font-size: 20px; font-weight: 500; line-height: 20px;
+}
+
+.shoppingrow{
+    justify-content: start !important;
+}
+
+.cartcontainer .row{
+    justify-content: center;
+    align-items: center;
+}
+
+.cartcontainer .title h1{
+    font-size: 65px !important;
+    line-height: 60px;
+
+}
+
+.productsrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singleproductrow{
+    margin-bottom: 1.5rem;
+}
+
+.cartcontainer span{
+    font-size: 20px; margin: 0 1rem;
+}
+
+.pricecol p{
+    float: right;
+}
+
+.btncontpayment, .btncontshop{
+    margin: 0; width: 100%; margin-bottom: .5rem;
+}
+
+.btncontshop2{
+    margin: 0; text-align: center;
+}
+
+.btnplus, .btnminus, .btntrash{
+    margin: 0;
+}
+
+.btncontshop:hover{
+    background-color: rgb(93, 93, 93) !important;
+}
+
+.carttable{
+    border: solid black 1px
+}
+.carttr{
+    font-family: Antonio;
+    font-weight: bold;
+}
+
+
+.adminheading{
+    background-color: black;
+    color: white;
+    font-family: Antonio;
+}
+
+@media (min-width: 770px ) AND ( max-width:1400px){
+    .header__item, .table-data {
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width: 250px ) AND ( max-width:770px){
+    .header__item, .table-data {
+        font-size: 16px !important;
+    }
+
+    .table-header2 {
+        display: block;
+    }
+
+    .header__item {
+        display: block;
+        border-bottom: 2px solid #ddd;
+        padding: 10px;
+    }
+    .table-data {
+        display: block;
+        border-bottom: 2px solid #ddd;
+        padding: 10px;
+    }
+
+    .table-data:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    .imgd{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ----------------------------------------Footer--------------------------------------------------------- */
+
+.footercontainer{
+    flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex; background-color: black !important   ;
+}
+
+.contentrow{
+    width: 100%; display: flex; justify-content: space-evenly;
+}
+
+.contact{
+    flex: 1 1 0; justify-content: flex-start; align-items: flex-start;  display: flex
+}
+
+.contact img{
+    width: 198px; height: 61px; object-fit: cover; margin-bottom: 1rem;
+}
+
+.socialmedia{
+    width: 141px; justify-content: center; align-items: center; gap: 12px; display: flex; margin-left: 1.5rem;
+}
+
+.contactdetailscol{
+    flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex
+}
+
+.contactdetailscol p, .newsletter h1{
+    align-self: stretch; color: white; font-size: 16px; font-family: Roboto; font-weight: 600; line-height: 24px; word-wrap: break-word; margin: 0;
+}
+
+.newsletter div{
+    gap: 10px; display: inline-flex; width: 100%; flex-wrap: wrap;
+}
+
+.newsletter p{
+    align-self: flex-end; color: white; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word;
+}
+
+.newsletter input{
+    border-radius: 5px; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; align-self: stretch; border: none;
+}
+
+.subscribebtn{
+   border-radius: 15px; border: none; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word; background-color: white;
+}
+
+.subscribebtn:hover{
+    color: white; background-color: gray;
+}
+
+.creditsrow{
+    align-self: stretch; justify-content: center; align-items: center; display: flex; text-align: center; border-top: 1px solid white; padding-top: 1rem;
+}
+
+.creditsrow p{
+    color: white; font-size: 14px; font-family: Roboto; font-weight: 400; line-height: 21px; word-wrap: break-word; margin: 0;
+}
+
+@media (min-width: 250px ) AND ( max-width:370px) {
+    .contact{
+        flex-direction: column; gap: 2rem;
+    }
+
+    .contactdetailscol{
+        margin-bottom: 2rem; gap: 10px;
+    }
+}
+
+/* --------------------about--------------------- */
+/* Same stylings as the homeheadercontent */
+.aboutcontainer{
+    background-color: white;
+}
+
+/* -----------------------contact----------------------------------- */
+
+.formcontainer{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.form input, .form textarea{
+    border: black 1px solid;
+}
+
+.form{
+    width: 50%;
+}
+
+@media (min-width: 250px ) AND ( max-width:430px) {
+    .form{
+        width: 100%;
+    }
+}
+
+/* -----------------------payment------------------------ */
+.CODdropdown{
+    width: 95% !important;
+}
+
+.CODdropdown2{
+    width: 100%;
+}
